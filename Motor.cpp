@@ -2,6 +2,10 @@
 //
 //	Created by Janine Müller on 30.07.2015
 
+//Restore factory settings; Nur im Notfall benutzen
+//SendCmd(Motor_handle[0], 1, 137, 0, 0, 1234); 	
+//SendCmd(Motor_handle[1], 1, 137, 0, 0, 1234);
+
 #include "../RS232com/RS232communication.h"
 #include "Motor.h"
 #include <fstream>
@@ -155,7 +159,7 @@ void Motor::ReferenceRunX(){
 	SendCmd(this->_Motor_storage[0], 1, TMCL_RFS, RFS_START, 0, 0);
 	GetResult(this->_Motor_storage[0], this->_Address, this->_Status, this->_Value);
 
-	sleep(90);
+	sleep(60);
 
 	//Value = 6; // should not be zero
 

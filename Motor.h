@@ -5,6 +5,9 @@
 //  Created by Janine Müller on 30.07.2015.
 //
 //
+//Restore factory settings; Nur im Notfall benutzen
+//SendCmd(Motor_handle[0], 1, 137, 0, 0, 1234); 	
+//SendCmd(Motor_handle[1], 1, 137, 0, 0, 1234);
 
 #ifndef ____Motor__
 #define ____Motor__
