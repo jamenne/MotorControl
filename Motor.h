@@ -65,7 +65,7 @@ class Motor {
 		virtual ~Motor(){};
 
 	    void CheckComports();
-	    void ConnectMotor(bool verbosity);
+	    void ConnectMotor(bool verbosity = false);
 	    void ReferenceRunX();
 	    void ReferenceRunY();
 	    void MoveRelative(std::string xy, int pos, int speed=100);

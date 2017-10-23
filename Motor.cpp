@@ -35,9 +35,9 @@ _Value(Value)
 		}	
 	
 	// Connect motors, motors are saved in an array	
-	this->ConnectMotor(verbosity);
+	//this->ConnectMotor(verbosity);
 
-	this->_NumOfMotor = this->_Motor_storage.size();
+	//this->_NumOfMotor = this->_Motor_storage.size();
 
 }
 
@@ -55,6 +55,8 @@ void Motor::CheckComports(){
 }
 
 void Motor::ConnectMotor(bool verbosity){
+
+	cout << "Looking for Motors. This may take a few seconds..." << endl;
 
 	// Get Number of Comports, from RS232Communication
 	int n = number_of_comports();
@@ -113,6 +115,10 @@ void Motor::ConnectMotor(bool verbosity){
 	GetResult(this->_Motor_storage[0], this->_Address, this->_Status, this->_Value);
 	SendCmd(this->_Motor_storage[0], 1, TMCL_SAP, 13, 0, 0);
 	GetResult(this->_Motor_storage[0], this->_Address, this->_Status, this->_Value);
+
+	this->_NumOfMotor = this->_Motor_storage.size();
+
+	cout << "Finished Initialization of Motors" << endl;
 
 }
 
