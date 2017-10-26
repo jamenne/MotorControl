@@ -165,7 +165,7 @@ void Motor::ReferenceRunX(){
 	SendCmd(this->_Motor_storage[0], 1, TMCL_RFS, RFS_START, 0, 0);
 	GetResult(this->_Motor_storage[0], this->_Address, this->_Status, this->_Value);
 
-	sleep(60);
+	sleep(5);
 
 	//Value = 6; // should not be zero
 
@@ -232,7 +232,7 @@ void Motor::ReferenceRunY(){
 	SendCmd(this->_Motor_storage[1], 1, TMCL_RFS, RFS_START, 0, 0);
 	GetResult(this->_Motor_storage[1], this->_Address, this->_Status, this->_Value);
 
-	sleep(20);
+	sleep(5);
 	/*Value = 6; // should not be zero
 
 	while(Value != 0){
