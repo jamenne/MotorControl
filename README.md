@@ -26,7 +26,7 @@ make
 ```
 
 ## How to use it
-e.g. in `CMakeLists.txt` of `XYTable:  
+e.g. in `CMakeLists.txt` of `XYTable`:  
 
 ```bash
 add_library(MotorControl ../MotorControl/Motor.cpp)
