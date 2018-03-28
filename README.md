@@ -1,5 +1,5 @@
 # Control TRINAMIC motors
- Author: Janine Müller
+ Author: Janine Menne
 
 ## Description
 Motors by TRINAMIC are connected to the PC via RS232.  
@@ -11,7 +11,7 @@ The repository contains the source code as well as CMakeLists and a GUI version 
 
 ## Requirements to run terminal program
 
-Availability of the following libraries (author: Janine Müller):
+Availability of the following libraries (author: Janine Menne):
 * [RS232Communication][4]
 
 
