@@ -33,4 +33,4 @@ add_library(MotorControl ../MotorControl/Motor.cpp)
 ```
 
 [1]: http://www.mctechnology.nl/pdf/TMCL_reference_2015.pdf
-[4]: https://git.e5.physik.tu-dortmund.de/jmueller/RS232communication
+[4]: https://github.com/jamenne/RS232Communication
